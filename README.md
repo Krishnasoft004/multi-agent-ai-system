@@ -9,7 +9,7 @@ A sophisticated multi-agent AI system built with FastAPI, Next.js, and LangGraph
 - **Real-time Updates**: Server-Sent Events (SSE) for live task progress and agent communication
 - **Task Planner UI**: Visual representation of task execution and status
 - **Session Management**: Persistent conversations with MongoDB storage
-- **Multiple LLM Support**: OpenAI, Google Gemini, and Groq integration
+- **LLM Support**: Google Gemini integration
 
 ## 🏗️ Architecture
 
@@ -55,10 +55,7 @@ nano .env
 Add your API keys:
 \`\`\`env
 GOOGLE_API_KEY=your_google_gemini_key_here
-# OR
-OPENAI_API_KEY=your_openai_key_here  
-# OR
-GROQ_API_KEY=your_groq_key_here
+
 \`\`\`
 
 ### 3. Start the System
@@ -158,9 +155,7 @@ npm run dev
 
 ### Environment Variables
 
-#### Required API Keys (at least one)
-- `OPENAI_API_KEY` - OpenAI API key
-- `GROQ_API_KEY` - Groq API key (free tier available)
+#### Required API Keys
 - `GOOGLE_API_KEY` - Google Gemini API key
 
 #### Optional
